@@ -1,3 +1,1 @@
-void main() {
-  print("Hellow");
-}
+void main() {}

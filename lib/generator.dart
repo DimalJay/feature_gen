@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 import 'package:feature_gen/config.dart';
 import 'package:path/path.dart' as path;
@@ -17,9 +18,8 @@ class LibFileGenerator {
       }
       generatePath(filePath);
       file.writeAsStringSync(content);
-      print('File "${file.path}" generated in the lib folder.');
     } catch (e) {
-      print('Error generating file: $e');
+      log(e.toString());
     }
   }
 

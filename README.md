@@ -1,16 +1,29 @@
 # feature_gen
 
-A new Flutter project.
+A Dart package for generating feature-related code files easily.
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
+You can install this package via [pub.dev](https://pub.dev/).
 
-A few resources to get you started if this is your first Flutter project:
+Add the following line to your `pubspec.yaml` file:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```yaml
+dependencies:
+  feature_gen: ^1.0.0  # Use the latest version from pub.dev
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+or run
+
+```bash
+flutter pub add feature_gen
+```
+
+## Usage
+
+```bash
+dart run feature_gen -f <feature_name>
+#or
+dart run feature_gen --feature=<feature_name>
+
+```
